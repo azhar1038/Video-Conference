@@ -2,9 +2,10 @@
 Video conferencing app using SFU
 
 ## Steps to run
-* Clone the repository using ```git clone https://github.com/mdazharuddin1011999/Video-Classroom.git```
+* Clone the repository using ```git clone https://github.com/azhar1038/Video-Conference.git```
 * Change the directory using ```cd Video-Conference```
-* **For Linux users only ([Click here for details](https://mediasoup.org/documentation/v3/mediasoup/installation/#linux-osx-and-any-nix-system)):**
+* **For Linux users only ([Click here for details](https://mediasoup.org/documentation/v3/mediasoup/installation/#linux-osx-and-any-nix-system)):**  
+  If you want to install natively. If you want to use docker, follow the Windows steps
   - Install node version >= v10.0.0
   - Install python version 2 or 3
   - Install make
