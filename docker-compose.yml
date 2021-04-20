@@ -1,0 +1,18 @@
+version: "3"
+services: 
+    app:
+        build: .
+        image: "igit/video_conference"
+        # environment:
+        #     - DEBUG=mediasoup*
+        command: npm run dev
+        container_name: "app"
+        ports: 
+            - "3000:3000/tcp"
+            - "2000-2020:2000-2020/udp"
+            - "2000-2020:2000-2020/tcp"
+        volumes: 
+            - ".:/service/"
+            - "nodemodules:/service/node_modules"
+volumes:
+    nodemodules: {}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>Video Class</title>
+    </head>
+    <body>
+        <h1>Video Class</h1>
+        <input type="checkbox" id="use_video" checked="1">Video</input>
+        <input type="checkbox" id="use_audio" checked="1">Audio</input><br>
+
+        <button id="start_media_button">Start Media</button>
+        <button id="stop_media_button">Stop Media</button><br><br>
+
+        <button id="connect_button">Connect</button>
+        <button id="disconnect_button">Disconnect</button><br><br>
+
+        <div>
+            Local Video Muted<br>
+            <video id="local_video" autoplay style="width: 120px; height: 90px; border: 1px solid black;" muted="muted"></video>
+            <span id="state_span"></span>
+        </div>
+        <br>
+        Remote Videos
+        <div id="remote_container"></div>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="/scripts/mediasoup-client.js"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/mediasoup-client@3.6.21/lib/index.min.js"></script> -->
+        <script src="/scripts/index.js"></script>
+    </body>
+</html>
