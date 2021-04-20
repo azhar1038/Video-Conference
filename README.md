@@ -1,6 +1,8 @@
 # Video-Classroom
 Video conferencing app using SFU
 
+## Declaration
+This repo comes with dummy https certificates, so you will see a warning in browser when you try to run the app. To avoid this, replace these certificates with your own valid ones.
 ## Steps to run
 * Clone the repository using ```git clone https://github.com/azhar1038/Video-Conference.git```
 * Change the directory using ```cd Video-Conference```
